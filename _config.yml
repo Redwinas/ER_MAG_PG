@@ -1,3 +1,3 @@
-theme: jekyll-theme-midnight
+theme: jekyll-theme-slate
 jekyll_auth:
   ssl: true
