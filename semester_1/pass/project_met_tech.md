@@ -8,6 +8,6 @@ permalink: /semester_1/project_met_tech/6d6319c2c2d283f6f7c01da76a41900059bc850c
 <b>Puslapio kontekstas vis dar kuriamas</b>
 <script type="text/javascript">
 	"use strict";
-window.history.pushState("object or string", "Title", "/semester_1/project_met_tech");
+//window.history.pushState("object or string", "Title", "/semester_1/project_met_tech");
 	</script>
 
