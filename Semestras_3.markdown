@@ -1,7 +1,7 @@
 ---
 layout: pageC
 title: Semestras 3
-permalink: /semester_3/
+permalink: /ER_MAG_PG/semester_3/
 ---
 <b>Page is still development</b>
 <p>
