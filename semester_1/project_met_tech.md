@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projekto metodologija ir technologija
-permalink: /semester_1/project_met_tech
+permalink: /semester_1/project_met_tech/
 ---
 
 <body>

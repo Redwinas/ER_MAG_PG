@@ -25,7 +25,7 @@ Technologinė  platforma:| Android Studio|
 	
 <script type="text/javascript">
 	"use strict";
-//window.history.pushState("object or string", "Title", "/ER_MAG_PG/semester_1/about/");
+window.history.pushState("object or string", "Title", "/ER_MAG_PG/semester_1/about/");
 	</script>
 	
 	

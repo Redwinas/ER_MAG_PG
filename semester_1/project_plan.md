@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projekto planavimas
-permalink: /semester_1/project_plan
+permalink: /semester_1/project_plan/
 ---
 
 <body>
