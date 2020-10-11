@@ -1,0 +1,116 @@
+---
+layout: default
+---
+
+<style>
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+  }
+  input[type=text] {
+  border-radius: 4px;
+  
+}
+.button {
+  transition-duration: 0.4s;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {
+  background-color: #1C2833; /* Green */
+  color: white;
+}
+</style>
+<div>
+    {{ content }}
+</div>
+
+<div class="page-content" style="border-top:double 1px gray">
+    <label class="post-title">Komentarai</label><br />
+    <label>Pavadinimas/Title</label><br/>
+    <input type="text" id="cTitle" name="cTitle"><br/>
+    <label>Autorius/Author</label><br/>
+    <input type="text" id="cAuthor" name="cAuthor"><br/>
+    <label>Komentaras/Comment</label>
+    <textarea type="text" id="cComment" name="cComment"></textarea><br/>
+    <button class="button" id="submitBtn" onclick="downloadContent()" >Submit/Komentuoti</button>
+</div>
+
+<script>
+    
+  function curDateTime(){
+    var currentdate = new Date(); 
+    var datetime = currentdate.getFullYear() + "-"
+                + currentdate.getMonth()  + "-" 
+                + currentdate.getDate() + " "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds();
+                return datetime;
+  }
+
+  function curDate(){
+    var currentdate = new Date(); 
+    var datetime = currentdate.getFullYear() + "-" 
+                + currentdate.getMonth() + "-"
+                + currentdate.getDate();
+    return datetime;
+  }
+    function downloadContent() {
+      var name="comment.txt";
+      var dateTime = curDateTime();
+      var date = curDate();
+      var content = "---\n";
+      content += "layout: post\n";
+      content += "title: " + document.getElementById("cTitle").value;
+      content += "\n";
+      content += "author: " + document.getElementById("cAuthor").value;
+      content += "\n";
+      content += "date: " + dateTime + "\n";
+      content += "---\n";      
+      content += document.getElementById("cComment").value;
+      var atag = document.createElement("a");
+      var file = new Blob([content], {type: 'text/plain'});
+      atag.href = URL.createObjectURL(file);
+      atag.download = name;
+      atag.click();
+      openGitHubRepo();
+      alert("!!! Important: you must be logged in to your GitHub account !!!\nInstructions:\n1. Open downloaded comment.txt file\n2. Copy and paste the generated text to Edit New file block\n3. Name file " + curDate() +"-"+ document.getElementById("cTitle").value + ".markdown" + "\n4. Scroll down and press commit new file ");
+    }
+    function openGitHubRepo(){
+      window.open("https://github.com/Redwinas/ER_MAG_PG/new/gh-pages/_posts");
+    }
+</script>
+<div class="page-content" style="border-top:double 0.6px gray">
+    {% for post in site.posts %}
+    {% if post.category != 'deadOne' %}
+    <article>
+      <h2>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h2>
+      <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date_to_long_string }}</time>
+      <h3>Author - {{post.author}}</h3>
+      {{ post.content | truncate: 250 }}
+    </article>
+    {%endif%}
+  {% endfor %}
+</div>
