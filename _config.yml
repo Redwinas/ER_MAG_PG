@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   project.
   Puslapis naudojamas laikyti ir atvaizduoti Edvino Repečkos
   IFM-0/2 KTU Magistro projekto darbą.
-baseurl: "ER_MAG_PG" # the subpath of your site, e.g. /blog
+baseurl: "/ER_MAG_PG" # the subpath of your site, e.g. /blog
 url: "https://redwinas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Redwinas
 
