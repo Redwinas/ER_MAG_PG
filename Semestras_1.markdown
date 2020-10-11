@@ -1,7 +1,7 @@
 ---
 layout: pageC
 title: Semestras 1
-permalink: /semester_1/
+permalink: /ER_MAG_PG/semester_1/
 ---
 # Pasirinkite norimą 1 semestro subkategoriją ar darbo dalį
 1. [Apie projektą](about)
