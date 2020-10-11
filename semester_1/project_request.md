@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projekto prašymas
-permalink: /semester_1/project_request
+permalink: /ER_MAG_PG/semester_1/project_request
 ---
 
 <body>
