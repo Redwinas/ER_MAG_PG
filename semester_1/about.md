@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Apie projekto temą
-permalink: /semester_1/about/
+permalink: /ER_MAG_PG/semester_1/about/
 ---
 
 <body>
