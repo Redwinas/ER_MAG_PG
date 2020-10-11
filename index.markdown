@@ -4,6 +4,8 @@
 
 layout: home
 ---
+<META http-equiv="refresh" content="0;URL=/ER_MAG_PG/">
+
 # Magistro Projektas
 
 ## Edvinas Repečka
