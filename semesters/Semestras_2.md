@@ -3,6 +3,6 @@ layout: pageC
 title: Semestras 2
 permalink: /semester_2/
 ---
-<b>Page is still development</b>
-<p>
-<b>Puslapio kontekstas vis dar kuriamas</b>
+# Pasirinkite norimą 2 semestro subkategoriją ar darbo dalį
+1. [Reikalavimų specifikacija](proejct_reik)
+2. [Architektūros specifikacija](project_arch)
