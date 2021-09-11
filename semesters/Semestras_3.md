@@ -1,8 +1,8 @@
 ---
 layout: pageC
-title: Semestras 3
+title: Semestras 
 permalink: /semester_3/
 ---
-<b>Page is still development</b>
-<p>
-<b>Puslapio kontekstas vis dar kuriamas</b>
+# Pasirinkite norimą 3 semestro subkategoriją ar darbo dalį
+1. [Darbo planas](project_plan)
+2. Still in development...
