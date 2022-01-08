@@ -7,3 +7,4 @@ permalink: /semester_3/
 1. [Darbo planas](project_plan)
 2. [Testavimo planas](test_plan)
 4. [Kokybės ataskaita](quality_report)
+4. [Dokumentacija](documentation)
