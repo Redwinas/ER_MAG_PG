@@ -11,7 +11,7 @@ permalink: /semester_3/documentation/6d6319c2c2d283f6f7c01da76a41900059bc850ce4b
 window.history.pushState("object or string", "Title", "/ER_MAG_PG/semester_3/documentation");
 	</script>
 
-<form method="get" action="https://github.com/Redwinas/MAG_ER_FILES/raw/main/edvrep_dokumentacija.zip">
+<form method="get" action="https://github.com/Redwinas/MAG_ER_FILES/raw/main/edvrep_dokumentacija.7z">
     <button class="button" type="submit">Download file/Atsisiųsti failą</button>
 	<label>!!!Privaloma būti prisijungusiam prie GitHub.com!!!</label>
  </form>
